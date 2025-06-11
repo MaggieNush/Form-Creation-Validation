@@ -13,17 +13,17 @@ document.addEventListener('DOMContentLoaded', function() {
         let isValid = true;
         const messages = [];
 
-        if(userNameInput.length < 3) {
+        if(username.length < 3) {
             isValid = false
             messages.push('Username must be at least 3 characters long');
         }
 
-        if(!emailInput.includes('@') || !emailInput.includes('.')) {
+        if(!email.includes('@') || !emailInput.includes('.')) {
             isValid = false
             messages.push('Please enter a valid email address.')
         }
 
-        if(passwordInput.length < 8) {
+        if(password.length < 8) {
             isValid = false
             messages.push('Password must be at least 8 characters long.')
         }
