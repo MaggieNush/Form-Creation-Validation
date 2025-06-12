@@ -8,7 +8,7 @@ async function fetchUserData() {
         if (!response.ok) {
             throw new Error (`Network response was not ok: ${response.status}`);
         }
-        const users = await response.json ();
+        const users = await response.json();
 
         dataContainer.innerHTML = '';
         const userList = document.createElement('ul')
